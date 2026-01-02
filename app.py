@@ -134,9 +134,9 @@ with col_res2:
         st.error("🚨 RISCO IMINENTE! (>= 9 pts)")
         st.markdown("**Ação Sugerida:** Supressão ou eliminação imediata do risco.")
     elif soma_total >= 7:
-        st.warning("⚠️ Risco Alto. Requer intervenção prioritária.")
+        st.warning("✅ Não há risco iminente.")
     else:
-        st.success("✅ Risco Moderado/Baixo. Monitoramento.")
+        st.success("✅ Não há risco iminente.")
 
 # Botão de Gerar Texto para Relatório (útil para copiar e colar no REDS ou relatório)
 if st.button("Gerar Texto para Relatório"):
